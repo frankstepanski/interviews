@@ -1,0 +1,17 @@
+Please complete the below exercises:
+
+Build a page in Code Pen (https://codepen.io/ ) or JS Fiddle (https://jsfiddle.net/ ) based on the attached images. Feel free to use any JS frameworks (React, Angular, etc…) or none. 
+
+1)	How would you expect the data response or contract to look for this grid? (how would you want to see this call coming from the API?)
+2)	Style the page matching the images as closely as you can 
+-	If a ticket is high priority make the background red 
+-	If a ticket is low priority make the background green 
+-	If a ticket is neutral priority make the text gray 
+3)	Add sorting into the grid
+-	By default the ticket column should be sorted in ASC order
+-	When a user clicks the column header then the column sorts in DESC order (SYS-0144 is smaller than ASYS-9870 since 0144 is smaller than 9870). If the user clicks the column again it should be sorted in ASC order. 
+-	Next to the column that is sorted there should be an indication (^ ascending, v descending)
+4)	Load more records 
+-	Click “load more” button and more records load into the grid
+
+There is no rush in completing this, feel free to take as much time as you need and include the link to the completed exercises as well as a ReadMe file if needed. 

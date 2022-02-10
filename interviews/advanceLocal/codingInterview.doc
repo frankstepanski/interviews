@@ -1,0 +1,26 @@
+OVERVIEW
+
+Before we meet we would like you to complete the below exercise. It is OK if the code isn't perfect, but it should run. Please do not spend more than four hours working through this exercise. Our goal is to learn a bit about your thought processes and how you approach problems while still being respectful of your time.
+
+We offer this activity in lieu of a technically-focused interview or test. When we meet, we will ask you some technical questions, opinions about platforms, and some of the decisions you made in your code.
+
+You don't have to stick to a particular style guide, but your code should be easy to read. Your comments and thought process are as important, if not more important, than the code itself.
+
+PART 1
+Create a styled HTML page that uses JavaScript to get JSON data from an API and render that data on the page. The code should be contained in a single file (including js, html and css as appropriate.)
+
+Use two of these three API’s:
+https://swapi.co/
+https://pokeapi.co/
+https://jsonplaceholder.typicode.com/
+
+Render at least 5-10 data points from each result set.
+Use vanilla JavaScript.
+Lay out and style the data in two columns.
+
+PART 2
+Based upon the sample page created in the first part, write a React component that renders the same content. (Use two API’s to retrieve data and render in two columns.) Please use React 16.8. Include appropriate import statements (including a package.json is not necessary). The code should be contained in one js/jsx file.
+
+Thank you for your time, we look forward to meeting you.
+
+

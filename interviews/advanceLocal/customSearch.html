@@ -1,0 +1,42 @@
+<html>
+  <head>
+    <title>JSON/Atom Custom Search API Example</title>
+  </head>
+  <body>
+    <div id="content"></div>
+    <script>
+      function hndlr(response) {
+    console.log("response -", response)
+      for (var i = 0; i < response.items.length; i++) {
+        var item = response.items[i];
+        // in production code, item.htmlTitle should have the HTML entities escaped.
+        // document.getElementById("content").innerHTML += "<br>" + item.htmlTitle;
+
+        // api key - 5ac1b1a0-f022-11ea-971b-db50769b7869
+        // new api key - 4250049c159afe36a2dfcf43e2aca9bc5c44f8a4226379dd79b7ef81dc2f74e1
+        fetch("https://serpapi.com/search?q=luke+skywalker&ijn=0&tbm=isch&engine=google&api_key=4250049c159afe36a2dfcf43e2aca9bc5c44f8a4226379dd79b7ef81dc2f74e1", 
+            {
+                method: 'GET', 
+                mode: 'no-cors', 
+                headers: {
+                    'Content-Type': 'application/x-www-form-urlencoded'
+                },
+                credentials: 'omit'
+            }
+        )
+        .then( response => response.json() )
+        .then( data => console.log(data) );
+
+        let img = document.createElement("img");
+        img.src = item.link;
+        // img.src = "https://media.gettyimages.com/photos/american-actor-mark-hamill-on-the-set-of-star-wars-episode-v-the-picture-id607402348?s=2048x2048"
+        console.log("item.link -", item.link)
+        
+        document.getElementById("content").appendChild(img)
+      }
+    }
+    </script>
+    <script src="https://www.googleapis.com/customsearch/v1?key=AIzaSyAkKvsq5wbqe0jZ2zcXpKblqcojTX0hmXk&cx=017576662512468239146:omuauf_lfve&q=tomato&callback=hndlr">
+    </script>
+  </body>
+</html>

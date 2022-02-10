@@ -1,0 +1,45 @@
+What is difference between == and ===?
+
+
+
+what is es6?
+
+What is let,var, const?
+
+
+Change react component. Add to sumTarget to React Display.
+
+What is functional programming? Have you used it in other languages?
+
+How can the server save state? cookie
+
+How do you resolve cross origin request issues?
+
+
+
+
+What allows for Responsive Web Design? - Flex, GridBox, Bootstrap// We declare a variable and the variable is assigned to the global window as its property.
+var a = 'Global';
+
+
+
+What is "this"? What is this in function? (Window)
+
+function whatsThis() {
+  return this.a;  // The value of this is dependent on how the function is called
+}
+
+whatsThis();          // 'Global' as this in the function isn't set, so it defaults to the global/window object
+whatsThis.call(obj);  // 'Custom' as this in the function is set to obj
+whatsThis.apply(obj); // 'Custom' as this in the function is set to obj
+
+Difference between a div and a span?
+
+
+
+
+
+
+
+
+
